@@ -1,8 +1,8 @@
 # CS133 Final Project – Predicting High-Priced Video Games
 
-This repository contains my CS133 final project, which explores video game pricing data and builds machine learning models to predict whether a game is **“high-priced”** relative to others on the same platform.
+CS133 final project, the project explores video game pricing data and builds machine learning models to predict whether a game is **“high-priced”** relative to others on the same platform.
 
-The core of the project lives in a single Jupyter notebook:
+The entire project is within the notebook below:
 
 - **`CS133_Final_Project.ipynb`**
 
