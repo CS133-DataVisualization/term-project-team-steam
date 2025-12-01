@@ -4,16 +4,16 @@ Authors: Esha Hooda (014796990), Huy Tran (018235100), Michael Lac (017985071)
 Instructor: Dr. Jessica Huynh-Westfall
 Last updated: November 30, 2025
 Interactive Colab link: https://colab.research.google.com/drive/1Q_Q5br3zvS-s7GQxfUQZdpWoN_mmRNGJ?usp=sharing
-Github link: 
+Github link: https://github.com/CS133-DataVisualization/term-project-team-steam
 
 Table of Contents
 1. Abstract ........................................ 2
 2. Background and Questions ........................ 3
 3. System Design and Methods ....................... 6
 4. Results ......................................... 10
-5. How to Run ...................................... 12
-6. References ...................................... 14
-Appendix A. Key Code Snippets ...................... 15
+5. How to Run ...................................... 16
+6. References ...................................... 18
+Appendix A. Key Code Snippets ...................... 19
 
 1. Abstract
 We analyze the Kaggle “Gaming Profiles 2025” dataset across Steam, PlayStation, and Xbox to understand platform pricing, genre distribution, and temporal trends. We answer five exploration questions with categorical and time-based plots, then build a classification pipeline that predicts a platform-relative “high price” label using platform, genre, release year, and the observed price as features.
@@ -79,7 +79,6 @@ Why these questions matter for ML
 - Q5 brings in user-side temporal behavior, reinforcing the idea that time and platform ecosystems evolve together.
 
 This motivated our classification task: predict whether a game is in the top 25% of prices for its platform using platform, genre, release year, and price itself as features. We later reflect on why including price is convenient but also a form of leakage.
-
 
 3. System Design and Methods
 
@@ -260,13 +259,17 @@ Interpretation
 
 In future work, we would remove `prices` from `X` and only predict from platform, genre, and release year. That would make performance scores more realistic and the model more useful.
 
-Sample outputs (for screenshots)
+Sample output screenshot descriptions
+“Top Genres by Platform” figure: grouped bars with the ten most frequent genres for each platform.
 
-- “Top Genres by Platform”: grouped bars of the 10 most common genres per platform.
-- “Average Game Price by Genre and Platform”: horizontal barplot sorted by mean `prices`.
-- “Releases Over Time”: lineplot of `num_games` by `release_year` and `platform`.
-- Confusion matrix heatmap for each classifier on the test set.
-- Plotly bar chart of `creation_year` vs count of accounts created.
+“Average Game Price by Genre and Platform” figure: horizontal bars sorted by mean price.
+
+“Releases Over Time” figure: lineplot by platform.
+
+Confusion matrix heatmap for the best model on test data.
+
+Plotly bar of account creation years with hover tooltips and export button.
+
 
 5. How to Run
 
@@ -331,6 +334,7 @@ Suggested repo structure
   - pipelines
   - preprocessing (encoders, scalers)
   - cross-validation
+- Example report template: CS298 Report (GitHub: `kylecobbs/CS298Report`).
 
 Appendix A. Key Code Snippets (aligned with notebook)
 
