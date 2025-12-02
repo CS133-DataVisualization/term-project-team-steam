@@ -60,7 +60,6 @@ This produces a platform-relative measure of “high price” rather than using 
   - `platform`
   - `genre` / `genres`
   - `release_date` / `release_year`
-  - `prices`
 - Additional columns may be used in EDA (e.g., ratings, owners, etc., if available).
 
 > **Note:** You may need to adjust the dataset path in the first data-loading cell of the notebook to match your local setup.
