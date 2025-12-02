@@ -7,6 +7,7 @@ The entire project is within the notebook below:
 - **`CS133_Final_Project(1).ipynb`**
 
 ---
+###CS133_Final_Project.ipynb is outdated due to 'prices' being included the ML features 
 
 ## 📌 Project Overview
 
