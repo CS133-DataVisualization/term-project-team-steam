@@ -4,7 +4,7 @@ CS133 final project, the project explores video game pricing data and builds mac
 
 The entire project is within the notebook below:
 
-- **`CS133_Final_Project.ipynb`**
+- **`CS133_Final_Project(1).ipynb`**
 
 ---
 
